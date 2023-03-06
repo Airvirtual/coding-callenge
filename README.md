@@ -1,46 +1,48 @@
 # Full Stack / Web3 Coding Challenge
 
-## Overview
+This is coding challenge project for Full Stack / Web3 Developer role.
 
-A DApp is just like any other Web application however the key difference is the backend runs entirely or mostly on a decentralized network. For the coding challenge you will be creating a data visualizing frontend interfacing with the [Uniswap](https://uniswap.org/) protocol by using their V3 subgraph. A subgraph is a decentralized API that enables developers to query blockchain data quickly. You will only need to define your queries in order to fetch the data required for the frontend. 
+## Getting Started
 
-## Task
+To get a local copy up and running, follow these steps.
 
-The task is to build a React frontend interface that visualizes data that is fetched from [Uniswap V3 Subgraph](https://github.com/Uniswap/v3-subgraph). The application should fetch data from the Uniswap subgraph, and display that data in tabular/visual form. To get an understanding of the available data and queries you may inspect the [hosted V3 subgraph explorer](https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3). 
+### Prerequisites
 
-The suggested data to be included in the frontend may consist of not limited to:
+- Node.js (version 16 or higher)
+- npm
+- yarn
 
-- Top pools by total volume locked (TVL), and 24Hr volume
-- Paginated tokens available that includes price point, price change, and TVL
-- Paginated transactions that includes total value, token amounts, linked account, and time
+### Installing
 
-You may visualize alternative data from the subgraph, the above data points are suggestive. 
+1. Fork the repository and clone it to your local machine.
+2. Navigate to the project directory.
+3. Install the required dependencies by running `npm install` or `yarn install`.
 
-## Checklist
+### Running
 
-- [ ]  Inspect what data / queries will be required using [hosted V3 subgraph explorer](https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3)
-- [ ]  Setup data model, queries, and fetch data from Uniswap V3 Subgraph
-- [ ]  Add a tabular visualization for “Top Pools” that displays total volume locked (TVL), and 24Hr volume
-- [ ]  Add a tabular visualization for “Tokens” that displays price point, price change, and TVL
-- [ ]  Add a tabular visualization for “Transactions” that displays total value, token amounts, linked account to Etherscan, and time (e.g. 15 mins ago)
-- [ ]  Add a button which the user can click to refresh data in the views
-- [ ]  Update readme to outline how to serve the frontend locally
-- [ ]  Include in-line documentation
+To start the app in development mode, run the following command:
 
- 
+```sh
+npm start
+```
 
-### Resources
+For yarn Command:
+```sh
+yarn start
+```
 
-- Uniswap V3 Subgraph repo: [https://github.com/Uniswap/v3-subgraph](https://github.com/Uniswap/v3-subgraph)
-- Uniswap Subgraph query examples: [https://docs.uniswap.org/sdk/subgraph/subgraph-examples](https://docs.uniswap.org/sdk/subgraph/subgraph-examples)
-- Uniswap V3 Subgraph explorer: [https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3](https://thegraph.com/hosted-service/subgraph/uniswap/uniswap-v3)
+This will start the app in your default browser. If it doesn't open automatically, navigate to http://localhost:3000/ in your browser.
 
-## What makes a good submission?
+### Building
 
-- Before you start this challenge, submit your basic info [here](https://docs.google.com/forms/d/e/1FAIpQLSc2gFdXgLLl0RlyBi1Ny-ih5oHPPP7qmi8Vn6XhrUq29rMJkg/viewform)
+To build the app for production, run the following command:
 
-- A good submission will provide a solution to the main task, that is to visualize the outlined data in a tabular/visual display using data fetched from Uniswaps subgraph. The code is well documented, formatted, and linted. Lastly, the code has test cases that covers the fundamental functionality. 
+```sh
+npm run build
+```
 
-- Bonus if you come up with creative visualizations! 
+This will create an optimized production build in the `build` folder.
 
-- Count down timer will be started after forking this project to your repo and finished when you make a pr. Submission finish time: 09:00 pm Mar 7 (PST)
+## License
+
+This project is licensed under the MIT License.
