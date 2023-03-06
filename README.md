@@ -43,4 +43,4 @@ You may visualize alternative data from the subgraph, the above data points are 
 
 - Bonus if you come up with creative visualizations! 
 
-- Count down timer will be started after forking this project to your repo and finished when you make a pr. Submission finish time: 09:00 pm Mar 7 (PST)
+- Count down timer will be started after forking this project to your repo and finished when you make a pr. Submission finish time: 09:00 pm Mar 8 (PST)
