@@ -1,0 +1,39 @@
+{
+  "name": "coding-callenge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "dayjs": "^1.11.7",
+    "eslint": "8.35.0",
+    "eslint-config-next": "13.2.3",
+    "graphql": "^16.6.0",
+    "next": "13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-virtuoso": "^4.1.0",
+    "rechart": "^0.0.1",
+    "recharts": "^2.4.3",
+    "typescript": "4.9.5",
+    "urql": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "18.0.11",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}
