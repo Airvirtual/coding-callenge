@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #eee;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    display: none;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 10px;
+    display: none;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333; 
+    display: block;
+  }
+
+.align-right {
+  display: flex !important;
+  justify-content: right !important;
+  margin-right: 90px;
+  margin-bottom: 10px;
+}
+.side-menu{
+    position: fixed;
+    background: #ffffff;
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 30px 20px;
+    transition: width .2s ease-in;
+    display: left;
+}
+
+.side-menu.inactive{
+    width: 80px;
+}
+
+.top-section{
+    position: relative;
+}
+
+.top-section .logo{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline-block;
+}
+ .top-section .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.top-section .toggle-menu-btn{
+    color: #3f51b5;
+    font-size: 20px;
+    position: absolute;
+    margin-top:100px;
+    right: 0;
+    transform: translateY(-70%);
+    cursor: pointer;
+}
+
+.side-menu.inactive  .toggle-menu-btn{
+    right: 100px;
+}
+
+
+
+
+
+.side-menu .main-menu .menu-item{
+    color: #333;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.side-menu .nav.active{
+    background: #3f51b5;
+    border-radius: 5px;
+    color: #fc0000;
+}
+
+
+.side-menu .main-menu{
+    margin: 5px 0;
+    position: relative;
+    max-height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+.side-menu .main-menu .menu-item .menu-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.side-menu .main-menu .menu-item span{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.side-menu.inactive .main-menu .menu-item span{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.side-menu .main-menu .sub-menu{
+    color: #333;
+    margin-left: 20px;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+    padding-left: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in;
+}
+
+
+
+.side-menu .main-menu .sub-menu.active{
+    max-height: 200px;
+}
+
+.side-menu  .sub-menu a{
+    display: block;
+    margin: 5px 0;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+
+.side-menu a.active{
+    /* change in background, not recorded in video */
+    background: #222;
+    display: block;
+    
+    border-radius: 5px;
+    color: #6b0000;
+
+}
+
+.side-menu-footer{
+    width: 100%;
+    background: #333;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.side-menu-footer .avatar{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+}
+.side-menu-footer .avatar img{
+    max-width: 100%;
+}
+
+.side-menu-footer .user-info{
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    position: absolute;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+}
+
+.side-menu.inactive .side-menu-footer .user-info{
+    opacity: 1;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.side-menu.inactive h3
+{
+    width: 0;
+}
+
+.user-info h3{
+    font-size: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+.side-menu-footer .user-info p{
+    font-size: 14px;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background: #333;
+}
+
+.container{
+    margin-left: 70px;
+    margin-top: 0px;
+    transition: margin-left .2s ease-in;
+    padding: 50px;  
+    box-sizing: border-box;
+}
+
+.container.inactive{
+    margin-left: 50px;
+}

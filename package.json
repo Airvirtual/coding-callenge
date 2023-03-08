@@ -1,0 +1,19 @@
+{
+  "name": "web3_dapp",
+  "version": "1.0.0",
+  "description": "A DApp is just like any other Web application however the key difference is the backend runs entirely or mostly on a decentralized network. For the coding challenge you will be creating a data visualizing frontend interfacing with the [Uniswap](https://uniswap.org/) protocol by using their V3 subgraph. A subgraph is a decentralized API that enables developers to query blockchain data quickly. You will only need to define your queries in order to fetch the data required for the frontend.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MQL-Development/web3_dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MQL-Development/web3_dapp/issues"
+  },
+  "homepage": "https://github.com/MQL-Development/web3_dapp#readme"
+}
